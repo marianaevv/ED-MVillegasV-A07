@@ -5,6 +5,8 @@
  */
 package ed;
 
+import java.util.Arrays;
+
 /**
  *
  * @author Mariana Villega
@@ -15,29 +17,12 @@ public class ED {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        AlgoritmosDeOrdenamientoSeleccion alg = new AlgoritmosDeOrdenamientoSeleccion(); //Creamos un objeto de la clase
-     
-       alg.setVector(); //Creamos el vector
-        System.out.println("VECTOR DADO");
-       alg.desordenado();//Se imprime el vector desordenado
-       System.out.println("");
-       System.out.println("VECTOR ORDENADO");
-       alg.ordenar();//Se imprime el vector ordenado
-        System.out.println("");
-      
-    
-                
-      
-    
-      
 
-// busquedaBinaria bb = new busquedaBinaria();
-      //bb.buscar();
-   
+     int [] arreglo ={20,-3,1,3,7,-1,43};//Se crea el arreglo y se le dan valores 
+        System.out.println("Arreglo dado:");
+    	System.out.println(Arrays.toString(arreglo));// imprimimos el arreglo dado
+ 	QuickSort.QuickSort(arreglo, 0, arreglo.length-1);//llamamos al metodo de ordenamiento y le damos los parametro
+        System.out.println(Arrays.toString(arreglo));//imprimimos el arreglo ya ordenado
 
-     
- }
-    
-  
-    
+ }    
 }
